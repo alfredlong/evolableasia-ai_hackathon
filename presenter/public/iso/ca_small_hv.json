@@ -1,0 +1,30 @@
+{"frames": {
+
+"ca_small_horz":
+{
+	"frame": {"x":0,"y":0,"w":78,"h":44},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":44},
+	"sourceSize": {"w":78,"h":44}
+},
+"ca_small_vert":
+{
+	"frame": {"x":0,"y":44,"w":78, "h":44},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":44},
+	"sourceSize": {"w":78,"h":44}
+}
+
+},
+"meta": {
+	"app": "http://www.skygate.co.jp/hackathon ",
+	"version": "1.0",
+	"image": "ca_small_hv.png",
+	"format": "RGBA5551",
+	"size": {"w":78,"h":88},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:682f909cd66baf330156be59a66e712b:3003e449284409367ce481c13a81bcfb:ace0e5e82375743ccde85e973fd84fb5$"
+}
+}

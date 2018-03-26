@@ -1,0 +1,10 @@
+composer global require "laravel/installer"
+composer global require "pear/pear"
+composer global require "phpunit/phpunit"
+composer global require "twbs/bootstrap"
+composer global require laravelcollective/html
+composer global update
+
+cd presenter
+  composer require twbs/bootstrap
+  composer require laravelcollective/html

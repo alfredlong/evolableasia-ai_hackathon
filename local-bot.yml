@@ -1,0 +1,35 @@
+version: '2'
+services:
+  apache:
+    build: ./apache
+    ports:
+      - "80:80"
+    volumes:
+      - ./presenter:/var/www/laravel
+      - ./apache/presenter_vhost.conf:/etc/apache2/sites-available/000-default.conf
+      - ./bot_urls.txt:/var/www/laravel/public/bot_urls.txt
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+  gameengine:
+    image: dinhnv/eva_gameengine:latest
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./bot_urls.txt:/var/tmp/bot_urls.txt
+    links:
+      - bot1
+    environment:
+      DOCKERHOST: ${DOCKERHOST}
+  bot1:
+    build:
+      context: ./players
+    volumes:
+      - ./players/random/aifleet:/var/www/player
+    environment:
+      USER_ID: bot1
+    ports:
+      - "8001:8000"
+    links:
+      - redis

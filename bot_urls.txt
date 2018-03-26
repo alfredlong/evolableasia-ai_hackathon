@@ -1,0 +1,2 @@
+bot2,http://10.99.0.1:8002,Bot2 Name
+bot3,http://10.99.0.1:3001,Bot3 Name
